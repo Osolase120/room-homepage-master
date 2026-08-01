@@ -78,12 +78,6 @@ nav.active {
     z-index: -1;
 }
 
-.parent-container {
-     display: flex;
-     flex-direction: column;
-     position: relative;
-}
-
 article {
     display: none;
     margin-bottom: 10px;

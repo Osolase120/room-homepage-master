@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 100%, 100%);
+    font-family: "League Spartan", sans-serif;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    padding-top: 2.5rem;
+}
+
+nav {
+    background-color: hsl(0, 100%, 100%);
+    height: 7.5rem;
+    position: absolute;
+    top: -1rem;
+    width: 100%;
+    /* padding: 3rem 0; */
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    width: 90%;
+    list-style: none;
+    margin-top: 3.4rem;
+}
+
+/* nav li {
+    list-style: none;
+} */
+
+nav a {
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+nav.active {
+    display: block;
+}
+
+.Menu {
+    position: absolute;
+    top: 2.4rem;
+    margin-left: 1.5rem;
+    z-index: 1;
+}
+
+.closeHamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Menu.active .openHamburger {
+  display: none; /* hide hamburger */
+}
+
+.Menu.active .closeHamburger {
+  display: block; /* show close icon */
+}
+
+.Testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: -9.2rem;
+    z-index: -1;
+}
+
+.parent-container {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     /* top: 50px; */
+}
+
+article {
+    display: none;
+    margin-bottom: 10px;
+}
+
+article.active {
+    display: block;
+}
+
+/* .Testimonials-card {
+    display: none;
+    height: 40rem;
+    width: 360px;
+    background-color: red;
+    box-shadow: 0 8px 16px hsla(265, 75%, 4%, .1);
+    padding: 2rem 1.5rem 3rem;
+    margin-bottom: 10px;
+    text-align: left;
+} */
+
+/* .Testimonials-card img {
+    position: relative;
+    top: 0;
+} */
+
+.mobile-image-hero-1, .mobile-image-hero-2, .mobile-image-hero-3 {
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.iconToggle {
+    background-color: hsl(0, 0%, 0%);
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    top: 14.2rem;
+    left: 77.5%;
+    height: 3rem;
+    width: 5.5rem;
+    padding: .6rem .9rem;
+    z-index: 1;
+}
+
+.iconToggle button {
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+}
+
+.textCard {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.textCard h1 {
+    font-weight: 600;
+    line-height: 1;
+    margin-left: -17px;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+.textCard p {
+    color: hsl(0, 0%, 63%);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-left: 2px;
+    padding: 0 .7rem;
+    /* text-align: left; */
+}
+
+.btn {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.btn button {
+    background-color: hsl(0, 100%, 100%);
+    border: none;
+    color: hsl(0, 0%, 0%);
+    letter-spacing: 1rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.second-section {
+    position: relative;
+    top: -6rem;
+}
+
+.second-section img {
+    width: 100%;
+}
+
+.about {
+    margin-top: 2rem;
+}
+
+.about h2 {
+    padding: 0 2rem;
+    text-transform: uppercase;
+}
+
+.about p {
+    color: hsl(0, 0%, 63%);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 1rem;
+    margin-left: 2px;
+    padding: 0 1.5rem;
+}
+
+.image-about-light {
+    margin-top: 3rem;
+}
+
+.attribution {
+    position: relative;
+    top: -3rem;
+}
+
+@media screen and (max-width: 375px) {
+.iconToggle {
+    top: 13.3rem;
+    left: 17.91rem;
+    padding: .7rem .9rem;
+}
+
+.textCard h1 {
+    padding: 0 1.5rem;
+}
+
+.textCard p {
+    margin-left: 1px;
+    padding: 0 .2rem;
+    /* text-align: left; */
+}
+
+.btn button {
+    padding: 0 .5rem;
+}
+
+.about h2 {
+    padding: 0 1.5rem;
+}
+
+.about p {
+    padding: 0 1.2rem;
+}
+}
+
+/* @media screen and (width > 390px) {
+    .iconToggle {
+    background-color: hsl(0, 0%, 0%);
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    top: 15rem;
+    left: 78.8%;
+    height: 3rem;
+    width: 5.5rem;
+    padding: .6rem .9rem;
+    z-index: 1;
+}
+} */
+
+@media screen and (min-width: 1440px) {
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: red; */
+    padding-top: 2.5rem;
+    padding-left: 6rem;
+}
+
+nav {
+    background-color: hsl(0, 100%, 100%);
+    height: .5rem;
+    position: absolute;
+    top: -1rem;
+    width: 35%;
+    /* padding: 3rem 0; */
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    width: 90%;
+    list-style: none;
+    margin-top: 3.4rem;
+}
+
+/* nav li {
+    list-style: none;
+} */
+
+nav a {
+    color: hsl(0, 100%, 100%);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+nav.active {
+    display: block;
+}
+
+.Menu {
+    display: none;
+}
+
+article { 
+    display: none;
+    justify-content: flex-start;
+}
+
+article.active {
+    display: flex;
+}
+
+.iconToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2.8rem; */
+    position: relative;
+    top: 24.2rem;
+    left: 52.5rem;
+    /* background-color: hsl(0, 0%, 0%); */
+    height: 3.5rem;
+    width: 7.5rem;
+    /* padding: 1.2rem 1.7rem; */
+    /* z-index: 1; */
+}
+
+.iconToggle button:first-child:hover {
+    background-color: hsl(0, 0%, 27%);
+    cursor: pointer;
+    height: 3.5rem;
+    width: 50%;
+    position: relative;
+    left: -.9rem;
+}
+
+.iconToggle button:last-child:hover {
+    background-color: hsl(0, 0%, 27%);
+    cursor: pointer;
+    height: 3.5rem;
+    width: 50%;
+    position: relative;
+    right: -.9rem;
+}
+
+.textCard {
+    margin-top: 6rem;
+    margin-left: 3rem;
+    width: 33%;
+}
+
+.textCard h1 {
+    position: relative;
+    left: -1.8rem;
+    font-weight: 700;
+    padding: 0 3.5rem;
+}
+
+.textCard p {
+    color: hsl(0, 0%, 63%);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-left: 10px;
+    padding: 0;
+    /* text-align: left; */
+}
+
+.btn button {
+    position: relative;
+    padding: 0 .6rem;
+}
+
+.btn button:hover {
+    color: hsl(0, 0%, 63%);
+    cursor: pointer;
+}
+
+.second-section {
+    display: flex;
+    position: relative;
+    top: -10.2rem;
+}
+
+.about {
+    width: 40rem;
+    padding: 0 1.3rem;
+}
+
+.image-about-light {
+    position: relative;
+    top: -3rem
+}
+
+.attribution {
+    top: -8rem;
+}
+}

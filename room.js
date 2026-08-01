@@ -12,17 +12,14 @@ const nextBtn = document.getElementById("next");
 
 let currentIndex = 0;
 
-// Show only the active testimonial
 function showArticle(index) {
   cards.forEach((card, i) => {
     card.classList.toggle("active", i === index);
   });
 }
 
-// Initial state
 showArticle(currentIndex);
 
-// Next button
 nextBtn.addEventListener("click", () => {
   currentIndex++;
 
@@ -33,7 +30,6 @@ nextBtn.addEventListener("click", () => {
   showArticle(currentIndex);
 });
 
-// Previous button
 prevBtn.addEventListener("click", () => {
   currentIndex--;
 

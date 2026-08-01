@@ -13,7 +13,6 @@ body {
 .logo {
     display: flex;
     justify-content: center;
-    /* background-color: red; */
     padding-top: 2.5rem;
 }
 
@@ -23,7 +22,6 @@ nav {
     position: absolute;
     top: -1rem;
     width: 100%;
-    /* padding: 3rem 0; */
     display: none;
 }
 
@@ -35,10 +33,6 @@ nav ul {
     list-style: none;
     margin-top: 3.4rem;
 }
-
-/* nav li {
-    list-style: none;
-} */
 
 nav a {
     color: hsl(0, 0%, 0%);
@@ -88,7 +82,6 @@ nav.active {
      display: flex;
      flex-direction: column;
      position: relative;
-     /* top: 50px; */
 }
 
 article {
@@ -99,22 +92,6 @@ article {
 article.active {
     display: block;
 }
-
-/* .Testimonials-card {
-    display: none;
-    height: 40rem;
-    width: 360px;
-    background-color: red;
-    box-shadow: 0 8px 16px hsla(265, 75%, 4%, .1);
-    padding: 2rem 1.5rem 3rem;
-    margin-bottom: 10px;
-    text-align: left;
-} */
-
-/* .Testimonials-card img {
-    position: relative;
-    top: 0;
-} */
 
 .mobile-image-hero-1, .mobile-image-hero-2, .mobile-image-hero-3 {
     position: relative;
@@ -161,7 +138,6 @@ article.active {
     margin-top: 1rem;
     margin-left: 2px;
     padding: 0 .7rem;
-    /* text-align: left; */
 }
 
 .btn {
@@ -229,7 +205,6 @@ article.active {
 .textCard p {
     margin-left: 1px;
     padding: 0 .2rem;
-    /* text-align: left; */
 }
 
 .btn button {
@@ -245,26 +220,10 @@ article.active {
 }
 }
 
-/* @media screen and (width > 390px) {
-    .iconToggle {
-    background-color: hsl(0, 0%, 0%);
-    display: flex;
-    gap: 2rem;
-    position: relative;
-    top: 15rem;
-    left: 78.8%;
-    height: 3rem;
-    width: 5.5rem;
-    padding: .6rem .9rem;
-    z-index: 1;
-}
-} */
-
 @media screen and (min-width: 1440px) {
 .logo {
     display: flex;
     justify-content: flex-start;
-    /* background-color: red; */
     padding-top: 2.5rem;
     padding-left: 6rem;
 }
@@ -275,7 +234,6 @@ nav {
     position: absolute;
     top: -1rem;
     width: 35%;
-    /* padding: 3rem 0; */
     display: flex;
 }
 
@@ -287,10 +245,6 @@ nav ul {
     list-style: none;
     margin-top: 3.4rem;
 }
-
-/* nav li {
-    list-style: none;
-} */
 
 nav a {
     color: hsl(0, 100%, 100%);
@@ -320,15 +274,11 @@ article.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 2.8rem; */
     position: relative;
     top: 24.2rem;
     left: 52.5rem;
-    /* background-color: hsl(0, 0%, 0%); */
     height: 3.5rem;
     width: 7.5rem;
-    /* padding: 1.2rem 1.7rem; */
-    /* z-index: 1; */
 }
 
 .iconToggle button:first-child:hover {
@@ -370,7 +320,6 @@ article.active {
     margin-top: 1rem;
     margin-left: 10px;
     padding: 0;
-    /* text-align: left; */
 }
 
 .btn button {
